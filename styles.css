@@ -1,0 +1,123 @@
+        body {
+            font-family: 'Viga', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7; /* Color de fondo */
+        }
+        .login-container {
+            display: flex; /* Usa Flexbox */
+            flex-direction: column; /* Apila verticalmente para móviles */
+            align-items: center; /* Centra verticalmente */
+            width: 90%; /* Ancho del contenedor para móviles */
+            max-width: 450px; /* Máximo ancho para móviles */
+            margin: auto; /* Centra el contenedor */
+            padding: 40px; /* Aumenta el padding */
+            background-color: white; /* Fondo blanco para el contenedor */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
+            border-radius: 10px; /* Bordes más redondeados */
+        }
+        .login-image {
+            width: 80%; /* Ancho de la imagen para móviles */
+            height: auto; /* Altura automática para mantener proporción */
+            margin-bottom: 20px; /* Espacio debajo de la imagen */
+        }
+        .form-container {
+            width: 100%; /* Ancho del formulario para móviles */
+        }
+        h1 {
+            font-size: 32px; /* Tamaño de fuente más pequeño para móviles */
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 18px; /* Tamaño de fuente más pequeño para móviles */
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 18px; /* Tamaño de fuente más pequeño para móviles */
+        }
+        .forgot-password {
+            font-size: 14px; /* Tamaño de fuente más pequeño para móviles */
+            color: blue;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: safe center;        
+            margin-top: 20px;
+        }
+        .login-btn {
+            font-family: 'Viga', sans-serif;
+            padding: 11px;
+            border: none;
+            border-radius: 15px; /* Bordes redondeados */
+            background-color: blue;
+            color: white;
+            font-size: 16px; /* Tamaño de fuente más pequeño para móviles */
+            cursor: pointer;
+
+        }
+        .help-icon {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        
+        /* Media queries para pantallas más grandes */
+        @media (min-width: 768px) {
+            .login-container {
+                flex-direction: row; /* Horizontal para pantallas más grandes */
+                max-width: 900px; /* Máximo ancho para pantallas grandes */
+                border-radius: 15px; /* Bordes más altos y anchos */
+            }
+            .login-image {
+                width: 45%; /* Ancho de la imagen para pantallas más grandes */
+                margin-right: 5%; /* Espacio a la derecha de la imagen */
+            }
+            .form-container {
+                width: 50%; /* Ancho del formulario para pantallas más grandes */
+            }
+            h1 {
+                font-size: 48px; /* Tamaño de fuente original */
+            }
+            label {
+                font-size: 24px; /* Tamaño de fuente original */
+            }
+            input[type="text"], input[type="password"] {
+                font-size: 24px; /* Tamaño de fuente original */
+            }
+            .forgot-password {
+                font-size: 16px; /* Tamaño de fuente original */
+            }
+            .button-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 20px;
+            }
+            .login-btn {
+                font-family: 'Viga', sans-serif;
+                font-size: 16px; /* Tamaño de fuente original */
+            }
+            .help-icon{
+                margin-top: 0px;
+            }
+        }
